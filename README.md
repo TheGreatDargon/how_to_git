@@ -148,6 +148,38 @@ git push origin <branch_name>
 
 If you have created another branch and pushed changes you will need to merge your pull request with main. If you are working on a bigger project there might be someone who approves merge request. A merge request will merge the incoming changes (changes you made) with the main branch (or whatever branches you are merging).
 
-To do this go to "pull requests" in github > "new pull request", make sure your branch is selected and create the merge request.
+To do this go to "pull requests" in github > "new pull request", make sure your branch is selected and create the pull request.
 
-Once you have created your merge request you can approve it
+Once you have created your pull request you can approve to merge the pull request (this is where if someone is responsible for this would come in)
+
+Now your branches changes have been merged with main and you have successfully pushed to github.
+
+### Pull
+
+If someone has made changes to the repository it might be good to pull the repository.
+
+```Shell
+git pull origin main
+```
+
+This will update your repository with changes from the main repository.
+
+# Cheatsheet
+
+| Category | Command | Description |
+| :--- | :--- | :--- |
+| **Verification & Config** | `git --version` | Check the installed Git version |
+| | `git config --global user.name "MyUserName"` | Set your global Git username |
+| | `git config --global user.email "MyEmail@domain.com"` | Set your global Git email address |
+| **SSH Setup** | `ssh-keygen -t ed25519 -C "your_email@example.com"` | Generate a new SSH key using Ed25519 |
+| | `cat ~/.ssh/id_ed25519.pub` | View your public SSH key *(Linux/Mac)* |
+| | `type ~/.ssh/id_ed25519.pub` | View your public SSH key *(Windows)* |
+| **Repository Setup** | `git clone <your repo>` | Clone a remote repository to your local machine using SSH |
+| **Branching** | `git checkout -b <branch_name>` | Create and immediately switch to a new branch |
+| | `git switch <branch_name>` | Switch to an existing branch |
+| **Staging & Committing** | `git add <File or directory>` | Stage specific files or directories for the next commit |
+| | `git add .` | Stage all modified and new files |
+| | `git commit -m "Your description"` | Commit staged changes with a descriptive message |
+| **Pushing & Pulling** | `git push origin main` | Push committed changes to the `main` branch on GitHub |
+| | `git push origin <branch_name>` | Push a new branch and its commits to GitHub |
+| | `git pull origin main` | Fetch and merge changes from the remote `main` branch |
