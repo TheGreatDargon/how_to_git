@@ -104,7 +104,7 @@ The first thing you will do is make and save changes that you have done. Make a 
 
 ### [OPTIONAL] Create a branch
 
-If you are working in a repository with more than one person or some kind of production project where users and access a front end, it might be good to create branches, this way you can avoid awkward changes causing issues, or incoming changes causing problems when you write more code.
+If you are working in a repository with more than one person or some kind of production project where users can access a front end, it might be good to create branches, this way you can avoid awkward changes causing issues, or incoming changes causing problems when you write more code.
 
 Creates and switches you to a new branch
 
