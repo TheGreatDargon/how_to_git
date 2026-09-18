@@ -102,7 +102,7 @@ Now that you have successfully created and cloned a git repository you will need
 
 The first thing you will do is make and save changes that you have done. Make a test file, create a python script, whatever you want to do.
 
-### OPTIONAL Create a branch
+### [OPTIONAL] Create a branch
 
 If you are working in a repository with more than one person or some kind of production project where users and access a front end, it might be good to create branches, this way you can avoid awkward changes causing issues, or incoming changes causing problems when you write more code.
 
