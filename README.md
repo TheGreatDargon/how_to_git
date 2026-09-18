@@ -9,7 +9,7 @@ git --version
 ```
 
 # Setting up git config
-
+<details>
 For git you will need a username and an email for your commits. You can set them by running the following commands in terminal:
 
 ```Shell
@@ -18,9 +18,11 @@ git config --global user.email "MyEmail@domain.com"
 ```
 
 This information was gotten from github's knowledge base, if you would like more in depth information about github's user config please visit the [knowledge base](https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git)
+</details>
 
 # Setting up SSH
 
+<details>
 The authentication method we are going to use is ssh for cloning repositories. First we need to create an ssh key.
 
 Run the following in your terminal (Use the email address that you used to register with github):
@@ -49,7 +51,11 @@ Once you copy your ssh key you need to give these to github, you can do this by 
 
 Give the key a name and paste the key you got from id_ed25519.pub into the key field, then hit "add ssh key"
 
+</details>
+
 # Using git
+
+<details>
 
 Now that you have [installed git](#how-to-start-a-project-using-git), and you have [created an ssh key](#setting-up-ssh), You can use git with github.
 
@@ -84,7 +90,11 @@ Now you can change directory into that repo
 cd <your repo>
 ```
 
+</details>
+
 ## Git Commands
+
+<details>
 
 Now that you have successfully created and cloned a git repository you will need to use some git commands to work on it. The following will be a short run through of the process you will do for git and the commands you will need.
 
@@ -164,7 +174,11 @@ git pull origin main
 
 This will update your repository with changes from the main repository.
 
+</details>
+
 # Cheatsheet
+
+<details>
 
 | Category | Command | Description |
 | :--- | :--- | :--- |
@@ -183,3 +197,5 @@ This will update your repository with changes from the main repository.
 | **Pushing & Pulling** | `git push origin main` | Push committed changes to the `main` branch on GitHub |
 | | `git push origin <branch_name>` | Push a new branch and its commits to GitHub |
 | | `git pull origin main` | Fetch and merge changes from the remote `main` branch |
+
+</details>
